@@ -1,0 +1,287 @@
+:root {
+  --font-titulo: "Montserrat", sans-serif;
+  --font-corpo: "Open Sans", sans-serif;
+  --laranja-xp: #ff4500;
+  --cinza-escuro: #1a1a1a;
+  --branco: #ffffff;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: var(--font-corpo);
+}
+
+.promo-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--branco);
+}
+
+.promo-hero h2 {
+  font-family: var(--font-titulo);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.filters-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-filter {
+  padding: 10px 25px;
+  border: 2px solid var(--laranja-xp);
+  background: transparent;
+  color: var(--laranja-xp);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-filter.active,
+.btn-filter:hover {
+  background: var(--laranja-xp);
+  color: var(--branco);
+  box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+}
+
+.games-grid-container {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.game-cardPromo {
+  background: var(--branco);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.game-cardPromo:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff4500;
+  color: white;
+  padding: 6px 12px;
+  font-weight: 800;
+  border-radius: 8px;
+  z-index: 2;
+  font-size: 0.85rem;
+}
+
+.game-cardPromo img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.game-cardPromo:hover img {
+  transform: scale(1.1);
+}
+
+.game-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.game-info h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  color: var(--cinza-escuro);
+  height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  font-weight: 700;
+  color: #2ecc71;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  margin-right: 8px;
+  font-weight: 400;
+}
+
+.btn-buy {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  background: var(--cinza-escuro);
+  color: var(--branco);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-buy:hover {
+  background: var(--laranja-xp);
+}
+
+.newsletter-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+  color: var(--branco);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.newsletter-form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 15px 25px;
+  width: 350px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  outline: none;
+  font-size: 1rem;
+}
+
+.newsletter-form input:focus {
+  border-color: var(--laranja-xp);
+}
+
+.newsletter-form button {
+  padding: 15px 40px;
+  background: var(--laranja-xp);
+  color: var(--branco);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.newsletter-form button:active {
+  transform: scale(0.95);
+}
+
+.parceiros-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-parceiros {
+  font-family: var(--font-titulo);
+  margin-bottom: 40px;
+  color: var(--cinza-escuro);
+  position: relative;
+  display: inline-block;
+}
+
+.titulo-parceiros::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background: var(--laranja-xp);
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+}
+
+.parceiros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  gap: 40px;
+}
+
+.parceiro-item img {
+  max-width: 120px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.parceiro-item img#nintendo {
+  max-width: 160px;
+}
+
+.parceiro-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.parceiro-item img#nintendo:hover {
+  filter: invert(17%) sepia(94%) saturate(6328%) hue-rotate(358deg)
+    brightness(94%) contrast(119%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .promo-hero h2 {
+    font-size: 2.2rem;
+  }
+  .newsletter-form input {
+    width: 100%;
+  }
+  .parceiros-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

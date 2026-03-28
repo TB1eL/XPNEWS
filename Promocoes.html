@@ -1,28 +1,271 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XPNews - Promoções</title>
-    <link rel="stylesheet" href="Promocoes.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Promocoes.css" />
   </head>
   <body>
-    <!-- Nav -->
     <header>
       <nav class="navbar">
         <div class="logo">
           <h1><a href="index.html">XPNews</a></h1>
         </div>
         <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./SobreNos.html">Sobre nós</a></li>
           <li><a href="./lancamentos.html">Lançamentos</a></li>
           <li><a href="./Promocoes.html">Promoções</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Hero -->
-    <!-- Footer -->
+
+    <main>
+      <section class="promo-hero">
+        <div class="hero-content">
+          <h2 class="fade-in">Ofertas Imbatíveis</h2>
+          <p class="fade-in">
+            Economize até 80% nos seus títulos favoritos nesta semana.
+          </p>
+        </div>
+      </section>
+
+      <section class="filters-container">
+        <span>Filtrar por:</span>
+        <div class="filter-buttons">
+          <button class="btn-filter active">Todos</button>
+          <button class="btn-filter">Steam</button>
+          <button class="btn-filter">PlayStation</button>
+          <button class="btn-filter">Xbox</button>
+          <button class="btn-filter">Nintendo</button>
+        </div>
+      </section>
+
+      <section class="games-grid-container">
+          <div class="game-cardPromo">
+            <div class="badge">-50%</div>
+            <img src="https://i.ytimg.com/vi/E3Huy2cdih0/sddefault.jpg" alt="Elden Ring" />
+            <div class="game-info">
+              <h3>Elden Ring</h3>
+              <p class="price">
+                <span class="old-price">R$ 249,00</span> R$ 124,50
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+          
+          <div class="game-cardPromo">
+            <div class="badge">-75%</div>
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/a757b56d2078be8b09a04e2ad531f1fefafaa129/capsule_616x353.jpg?t=1769690377" alt="Cyberpunk 2077" />
+            <div class="game-info">
+              <h3>Cyberpunk 2077</h3>
+              <p class="price">
+                <span class="old-price">R$ 199,00</span> R$ 49,75
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">Grátis</div>
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/page_bg_raw.jpg?t=1773400635" alt="Death Stranding" />
+            <div class="game-info">
+              <h3>Death Stranding</h3>
+              <p class="price"><span class="old-price">R$ 150,00</span> Grátis</p>
+              <a href="#" class="btn-buy">Resgatar</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-30%</div>
+            <img src="https://s2-techtudo.glbimg.com/yGbOx5BMsr4UaCfGCT3PYyXvEhg=/0x0:1300x681/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/O/K/l57RCsTj6JZVO8m1P1sQ/captura-de-tela-2020-06-12-as-01.17.38.png" alt="RE Village" />
+            <div class="game-info">
+              <h3>Resident Evil Village</h3>
+              <p class="price">
+                <span class="old-price">R$ 139,00</span> R$ 97,30
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-60%</div>
+            <img src="https://cdn1.epicgames.com/offer/14ee004dadc142faaaece5a6270fb628/EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S1_2560x1440-82eb5cf8f725e329d3194920c0c0b64f" alt="The Witcher 3" />
+            <div class="game-info">
+              <h3>The Witcher 3: Wild Hunt</h3>
+              <p class="price">
+                <span class="old-price">R$ 99,00</span> R$ 39,60
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-20%</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_FQTWLlPuRltYTU22XBavXv1jzcDuKY4KA&s" alt="God of War" />
+            <div class="game-info">
+              <h3>God of War Ragnarök</h3>
+              <p class="price">
+                <span class="old-price">R$ 299,00</span> R$ 239,20
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-45%</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR37ZpX19YISFEH3Uc40X--F4MVmBI-SPXCGQ&s" alt="Red Dead 2" />
+            <div class="game-info">
+              <h3>Red Dead Redemption 2</h3>
+              <p class="price">
+                <span class="old-price">R$ 239,00</span> R$ 131,45
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-90%</div>
+            <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000006442/691ba3e0801180a9864cc8a7694b6f98097f9d9799bc7e3dc6db92f086759252" alt="Celeste" />
+            <div class="game-info">
+              <h3>Celeste</h3>
+              <p class="price"><span class="old-price">R$ 36,99</span> R$ 3,69</p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-15%</div>
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/f30cc19e25cce7e46cd7dfe89f3ee7852e634232/capsule_616x353.jpg?t=1770338567" alt="Hollow Knight" />
+            <div class="game-info">
+              <h3>Hollow Knight</h3>
+              <p class="price">
+                <span class="old-price">R$ 47,99</span> R$ 40,79
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-50%</div>
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202408/0817/e0540d1459386e3197fce626ced734c4a6d56d905d84f833.png" alt="FIFA 24" />
+            <div class="game-info">
+              <h3>EA Sports FC 24</h3>
+              <p class="price">
+                <span class="old-price">R$ 359,00</span> R$ 179,50
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-33%</div>
+            <img src="https://cdn2.unrealengine.com/egs-marvelsspidermandigitaldeluxeedition-insomniacgamesnixxessoftware-editions-s1-2560x1440-59f0f63e23d2.jpg?resize=1&w=480&h=270&quality=medium" alt="Spider-Man" />
+            <div class="game-info">
+              <h3>Marvel's Spider-Man 2</h3>
+              <p class="price">
+                <span class="old-price">R$ 349,90</span> R$ 234,43
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-40%</div>
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/capsule_616x353.jpg?t=1753715778" alt="Skyrim" />
+            <div class="game-info">
+              <h3>Skyrim: Special Edition</h3>
+              <p class="price">
+                <span class="old-price">R$ 149,00</span> R$ 89,40
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-80%</div>
+            <img src="https://assets.nuuvem.com/image/upload/v1/products/5d1cded3881024790ca42772/sharing_images/otf94g2nni2yymembk3f.jpg" alt="Doom" />
+            <div class="game-info">
+              <h3>DOOM Eternal</h3>
+              <p class="price">
+                <span class="old-price">R$ 149,00</span> R$ 29,80
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-50%</div>
+            <img src="https://www.streetfighter.com/6/assets/images/index/mv_edition_bg.jpg" alt="Street Fighter" />
+            <div class="game-info">
+              <h3>Street Fighter 6</h3>
+              <p class="price">
+                <span class="old-price">R$ 249,00</span> R$ 124,50
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-67%</div>
+            <img src="https://cdn1.epicgames.com/offer/2a535f0e7c754dbe9157bf96adc62d56/EGS_MassEffectLegendaryEdition_BioWare_S1_2560x1440-3cd5c1d9f1eb8a308736051a1fafc432" alt="Mass Effect" />
+            <div class="game-info">
+              <h3>Mass Effect Legendary</h3>
+              <p class="price">
+                <span class="old-price"R$ 249,00</span> R$ 82,17
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+
+          <div class="game-cardPromo">
+            <div class="badge">-50%</div>
+            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1200/store/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a" alt="Minecraft" />
+            <div class="game-info">
+              <h3>Minecraft</h3>
+              <p class="price">
+                <span class="old-price">R$ 149,00</span> R$ 74,99
+              </p>
+              <a href="#" class="btn-buy">Ver Oferta</a>
+            </div>
+          </div>
+      </section>
+      <section class="newsletter-section">
+        <h3>Não perca nenhuma oferta!</h3>
+        <p>Receba alertas de preços baixos direto no seu e-mail.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Seu melhor e-mail" required />
+          <button type="submit">Cadastrar</button>
+        </form>
+      </section>
+      <section class="parceiros-section">
+        <h2 class="titulo-parceiros">Nossos Parceiros Oficiais</h2>
+        <div class="parceiros-grid">
+          <div class="parceiro-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Steam_Logo.png" alt="Steam" />
+          </div>
+          <div class="parceiro-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/PlayStation_logo.svg" alt="PlayStation" />
+          </div>
+          <div class="parceiro-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Xbox_one_logo.svg" alt="Xbox" />
+          </div>
+          <div class="parceiro-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo_gray_logo.svg/1280px-Nintendo_gray_logo.svg.png" alt="Nintendo" id="nintendo" />
+          </div>
+          <div class="parceiro-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Epic_Games_logo.svg" alt="Epic" />
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer class="site-footer">
       <div class="footer-container">
         <div class="footer-logo">
