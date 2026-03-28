@@ -1,175 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 a {
+  font-size: 1.5rem;
+  color: #ff4500;
+  text-decoration: none;
+}
+
+.logo h1 a:hover {
+  opacity: 0.8;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff4500;
+}
+
 /* Layout Geral */
 .sobre-nos-container {
-    display: flex;
-    align-items: center; /* Alinha o texto e a imagem verticalmente */
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1100px;
-    margin: 50px auto;
-    padding: 20px;
-    font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: sans-serif;
+  width: 100%;
 }
 
 /* Coluna de Texto */
 .texto-coluna {
-    flex: 1;
+  flex: 1;
 }
 
 .titulo-vermelho {
-    color: #e74c3c; /* Cor vermelha do seu exemplo */
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-family: 'Georgia', serif; /* Estilo mais elegante para o título */
+  color: #e74c3c;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Georgia", serif;
 }
 
 .descricao-azul {
-    color: #333; /* Cor do texto */
-    font-size: 1.1rem;
-    line-height: 1.8;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 .descricao-azul p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* Coluna da Imagem */
 .imagem-coluna {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .imagem-coluna img {
-    width: 100%;
-    max-width: 550px;
-    height: auto;
-    border-radius: 20px; /* Mantive um leve arredondado na foto para ficar moderno */
-    display: block;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 20px;
+  display: block;
 }
 
 /* Responsivo para Celular */
 @media (max-width: 768px) {
-    .sobre-nos-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .imagem-coluna img {
-        max-width: 100%;
-    }
-}
-/* Reset básico para tirar espaços das bordas */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  .sobre-nos-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-coluna img {
+    max-width: 100%;
+  }
 }
 
-/* O Footer agora é o único bloco preto e laranja */
+/* Footer */
 .site-footer {
-    background-color: #000; /* APENAS O FOOTER PRETO */
-    width: 100%;
-    padding: 40px 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #ff6600; /* ESCRITA LARANJA */
-    margin-top: auto; 
-    border-top: 2px solid #ff6600; /* Linha laranja no topo do footer */
+  background-color: #000;
+  width: 100%;
+  padding: 40px 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #ff6600;
+  margin-top: 50px;
+  border-top: 2px solid #ff6600;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px;
+  width: 100%;
 }
 
 /* LOGO XP LARANJA */
 .logo-xp-circle {
-    width: 65px;
-    height: 65px;
-    background-color: #000;
-    color: #ff6600;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    border: 2px solid #ff6600;
-    box-shadow: 0 0 10px rgba(255, 102, 0, 0.4);
+  width: 65px;
+  height: 65px;
+  background-color: #000;
+  color: #ff6600;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 2px solid #ff6600;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.4);
 }
 
 .footer-column ul {
-    list-style: none;
+  list-style: none;
 }
 
 .footer-column ul li {
-    margin-bottom: 10px;
-    font-size: 0.9rem;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
 }
 
 /* ANIMAÇÃO DOS LINKS AO PASSAR O MOUSE */
 .animated-links ul li a {
-    text-decoration: none;
-    color: #ff6600; /* Texto Laranja */
-    transition: 0.3s ease;
-    display: inline-block;
+  text-decoration: none;
+  color: #ff6600;
+  transition: 0.3s ease;
+  display: inline-block;
 }
 
 .animated-links ul li a:hover {
-    color: #fff; /* Muda para branco no mouse */
-    transform: translateX(10px); /* Desliza para o lado */
-    text-shadow: 0 0 8px #ff6600; /* Brilho neon */
+  color: #fff;
+  transform: translateX(10px);
+  text-shadow: 0 0 8px #ff6600;
 }
 
-/* Informações de contato laranjas */
 .contact-info ul li {
-    color: #ff6600;
+  color: #ff6600;
 }
 
 .footer-right {
-    text-align: right;
+  text-align: right;
 }
 
 .copyright {
-    font-size: 0.85rem;
-    color: #888; /* Direitos autorais em cinza para não brigar com o laranja */
-    margin-bottom: 15px;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 15px;
 }
 
 /* ÍCONES LARANJAS */
 .social-icons {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
 }
 
 .orange-icon {
-    width: 26px;
-    height: 26px;
-    /* Filtro para deixar o ícone laranja */
-    filter: invert(53%) sepia(93%) saturate(3041%) hue-rotate(1deg) brightness(103%) contrast(106%);
-    transition: 0.3s;
+  width: 26px;
+  height: 26px;
+  filter: invert(53%) sepia(93%) saturate(3041%) hue-rotate(1deg)
+    brightness(103%) contrast(106%);
+  transition: 0.3s;
 }
 
 .orange-icon:hover {
-    filter: brightness(200%); /* Brilha mais no hover */
-    transform: scale(1.2);
+  filter: brightness(200%);
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-    }
-    .footer-right {
-        text-align: center;
-    }
-    .social-icons {
-        justify-content: center;
-    }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .footer-right {
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
 }
