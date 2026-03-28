@@ -1,0 +1,60 @@
+/* Layout Geral */
+.sobre-nos-container {
+    display: flex;
+    align-items: center; /* Alinha o texto e a imagem verticalmente */
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Coluna de Texto */
+.texto-coluna {
+    flex: 1;
+}
+
+.titulo-vermelho {
+    color: #e74c3c; /* Cor vermelha do seu exemplo */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Estilo mais elegante para o título */
+}
+
+.descricao-azul {
+    color: #333; /* Cor do texto */
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.descricao-azul p {
+    margin-bottom: 15px;
+}
+
+/* Coluna da Imagem */
+.imagem-coluna {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-coluna img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 20px; /* Mantive um leve arredondado na foto para ficar moderno */
+    display: block;
+}
+
+/* Responsivo para Celular */
+@media (max-width: 768px) {
+    .sobre-nos-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .imagem-coluna img {
+        max-width: 100%;
+    }
+}
