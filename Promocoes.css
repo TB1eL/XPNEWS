@@ -255,8 +255,8 @@ body {
 }
 
 .parceiro-item img#nintendo:hover {
-  filter: invert(53%) sepia(93%) saturate(3041%) hue-rotate(1deg)
-    brightness(103%) contrast(106%);
+  filter: invert(17%) sepia(94%) saturate(6328%) hue-rotate(358deg)
+    brightness(94%) contrast(119%);
 }
 
 @keyframes fadeIn {
