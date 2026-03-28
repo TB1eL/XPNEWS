@@ -205,6 +205,60 @@ body {
   transform: scale(0.95);
 }
 
+.parceiros-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-parceiros {
+  font-family: var(--font-titulo);
+  margin-bottom: 40px;
+  color: var(--cinza-escuro);
+  position: relative;
+  display: inline-block;
+}
+
+.titulo-parceiros::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background: var(--laranja-xp);
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+}
+
+.parceiros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  gap: 40px;
+}
+
+.parceiro-item img {
+  max-width: 120px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.parceiro-item img#nintendo {
+  max-width: 160px;
+}
+
+.parceiro-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.parceiro-item img#nintendo:hover {
+  filter: invert(53%) sepia(93%) saturate(3041%) hue-rotate(1deg)
+    brightness(103%) contrast(106%);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
