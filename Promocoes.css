@@ -33,6 +33,40 @@ body {
   letter-spacing: 2px;
 }
 
+.filters-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-filter {
+  padding: 10px 25px;
+  border: 2px solid var(--laranja-xp);
+  background: transparent;
+  color: var(--laranja-xp);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-filter.active,
+.btn-filter:hover {
+  background: var(--laranja-xp);
+  color: var(--branco);
+  box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
